@@ -13,6 +13,7 @@ from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "website.settings")
+os.environ.setdefault("DISABLE_COLLECTSTATIC", "1")
 
 application = get_wsgi_application()
 application = DjangoWhiteNoise(application)
