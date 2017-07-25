@@ -68,8 +68,10 @@ TEMPLATES = [
 ]
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.core.context_processors.request',
-    
+    'django.core.context_processors.request',   
+)
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__) , 'templates').replace('\\','/'),
 )
 
 WSGI_APPLICATION = 'website.wsgi.application'
