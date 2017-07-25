@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '(czm*g(8&$qiyr3gj)n*slbk+6qm&lq#pf-9=!6@+^t&vmrz27'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','performancesap.com','www.performancesap.com']
 
